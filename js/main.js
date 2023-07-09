@@ -1,4 +1,4 @@
-function shuffle() {
+function shuffle(word) {
     jumbled_word = scramble(word);
     repopulate_grid(jumbled_word);
 }
@@ -53,11 +53,22 @@ function scramble(word) {
 }
 
 function check_answer(ele) {
-    if(event.key === 'Enter' && ele.value === 'clawing') {
+    if (event.key !== 'Enter') {
+        return;
+    }
+    if(ele.value === word) {
         alert("Congrats, you got the pangram!");
+        ele.value = '';
+        word = pick_word();
+        shuffle(word);
+    } else {
         ele.value = '';
     }
 }
 
-word = pick_word()
-start_game(word)
+function start() {
+    word = pick_word()
+    start_game(word)
+}
+
+start();
