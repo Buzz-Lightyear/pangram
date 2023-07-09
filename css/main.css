@@ -36,10 +36,18 @@ body {
 }
 
 #answer {
-	width: 99.5%;
+	width: 85%;
 	height: 30px;
 	font-size: 20px;
 	font-family: monospace;
 	text-transform:uppercase;
 	border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#rotate {
+	width: 13%;
+	height: 30px;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	background-color: rgba(255, 255, 255, 0.8);
+	font-weight: bold;
 }
