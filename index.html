@@ -12,7 +12,7 @@
 		Pangram
 	</div>
 	<div id="subtitle">
-		Create a word that utilizes all the letters displayed below, at least once. Letters may be repeated.
+		Create a word that utilizes all the letters displayed below, exactly once.
 	</div>
 	<div class="grid-container">
 		<div class="grid-item" id="letter1"></div>
@@ -28,6 +28,7 @@
 	<div id="solution">
 		<input type="text" id="answer" name="answer" onkeydown="check_answer(this)">
 		<button id="rotate" onclick="shuffle(word)">&#8634;</button>
+		<button id="cry" onclick="reveal(word)">&#128553;</button>
 	</div>
 </body>
 </html>

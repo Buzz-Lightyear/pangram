@@ -36,8 +36,8 @@ body {
 }
 
 #answer {
-	width: 85%;
-	height: 30px;
+	width: 73%;
+	height: 40px;
 	font-size: 20px;
 	font-family: monospace;
 	text-transform:uppercase;
@@ -45,8 +45,16 @@ body {
 }
 
 #rotate {
-	width: 13%;
-	height: 30px;
+	width: 12%;
+	height: 40px;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	background-color: rgba(255, 255, 255, 0.8);
+	font-weight: bold;
+}
+
+#cry {
+	width: 12%;
+	height: 40px;
 	border: 1px solid rgba(0, 0, 0, 0.8);
 	background-color: rgba(255, 255, 255, 0.8);
 	font-weight: bold;
